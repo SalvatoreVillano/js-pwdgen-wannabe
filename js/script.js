@@ -7,7 +7,6 @@ while(conditionString){
     var nome = prompt('Inserisci il tuo nome: ');
             if(!nome || !nome.match(/^[a-z]+$/i)){
                 window.alert("Sono ammesse solo lettere!");
-
         }
         else {
             conditionString = false;
