@@ -1,10 +1,18 @@
 var conditionInt = true;
+var conditionString = true;
 
 
 
+while(conditionString){
+    var nome = prompt('Inserisci il tuo nome: ');
+            if(!nome || !nome.match(/^[a-z]+$/i)){
+                window.alert("Sono ammesse solo lettere!");
 
-
-const nome = prompt('Inserisci il tuo nome: ');
+        }
+        else {
+            conditionString = false;
+        }
+    }
 
 const cognome = prompt('Inserisci il tuo cognome: ');
 
