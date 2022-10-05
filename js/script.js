@@ -56,9 +56,9 @@ while(conditionInt){
 
 
 let password = nome+cognome+colore+eta;
-document.getElementById('password').innerHTML = `La tua password generata e':${password}
+document.getElementById('password').innerHTML = `La tua password generata e': ${password}
 <br> Ti sembra troppo facile? Clicca sul bottone!`
 
 function randomizer(){
-    document.getElementById('passwordGenerata').innerHTML = `La tua password generata e':${generatePassword()}`
+    document.getElementById('passwordGenerata').innerHTML = `La tua password generata e': ${generatePassword()}`
 }
