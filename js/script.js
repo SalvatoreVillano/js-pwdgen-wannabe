@@ -1,10 +1,26 @@
+var conditionInt = true;
+
+
+
+
+
 const nome = prompt('Inserisci il tuo nome: ');
 
 const cognome = prompt('Inserisci il tuo cognome: ');
 
 const colore = prompt('Inserisci il tuo colore preferito: ');
 
-const eta = parseInt(prompt('Inserisci la tua eta: '));
+while(conditionInt){
+    var eta = parseInt(prompt('Inserisci la tua eta: '));
+        if(Number.isInteger(eta) == false){
+            window.alert("Devi inserire solo numeri!");
+        }
+        else {
+            conditionInt = false;
+        }
+    }
+
+
 
 let password = nome+cognome+colore+eta;
 
