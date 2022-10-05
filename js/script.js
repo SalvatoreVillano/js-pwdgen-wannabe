@@ -1,21 +1,37 @@
 var conditionInt = true;
-var conditionString = true;
+var conditionNome = true;
+var conditionCognome = true;
+var conditionColore = true;
 
-
-
-while(conditionString){
+while(conditionNome){
     var nome = prompt('Inserisci il tuo nome: ');
             if(!nome || !nome.match(/^[a-z]+$/i)){
                 window.alert("Sono ammesse solo lettere!");
         }
         else {
-            conditionString = false;
+            conditionNome = false;
         }
     }
 
-const cognome = prompt('Inserisci il tuo cognome: ');
+while(conditionCognome){
+    var cognome = prompt('Inserisci il tuo cognome: ');
+                if(!cognome || !cognome.match(/^[a-z]+$/i)){
+                window.alert("Sono ammesse solo lettere!");
+        }
+        else {
+            conditionCognome = false;
+        }
+    }
 
-const colore = prompt('Inserisci il tuo colore preferito: ');
+while(conditionColore){
+    var colore = prompt('Inserisci il tuo colore preferito: ');
+    if(!colore || !colore.match(/^[a-z]+$/i)){
+                window.alert("Sono ammesse solo lettere!");
+        }
+        else {
+            conditionColore = false;
+        }
+    }
 
 while(conditionInt){
     var eta = parseInt(prompt('Inserisci la tua eta: '));
@@ -27,8 +43,5 @@ while(conditionInt){
         }
     }
 
-
-
 let password = nome+cognome+colore+eta;
-
 document.getElementById('password').innerHTML = `La tua password generata e':${password}`
